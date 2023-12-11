@@ -1,0 +1,15 @@
+---
+import GitHuSvg from "../../../public/Icons/github-mark-white.svg"
+import { Image } from 'astro:assets';
+
+interface Props {
+  width?: number,
+  height?: number
+}
+
+const {height, width} = Astro.props
+---
+<a target="_blank" href="https://github.com/HugoCamposLopez">
+  <Image id={"github-icon"} src={GitHuSvg} alt={"GithubIcon"}  width={width} height={height}/>
+</a>
+

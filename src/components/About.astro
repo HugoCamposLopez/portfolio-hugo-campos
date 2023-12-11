@@ -1,0 +1,21 @@
+---
+import DesktopGuy from '../../public/images/desktop-guy.png'
+import { Image } from 'astro:assets'
+---
+
+<section class="h-screen">
+  <div class="bg-black flex justify-center">
+    <Image src={DesktopGuy} alt={'Desktop guy'} />
+  </div>
+  <article class="bg-grey flex flex-col items-center justify-center  text- black  h-[510px] font-mont">
+    <div class="w-[537px] flex flex-col gap-[30px] text-center">
+      <span class="text-2xl font-bold"> Nice to meet you!</span>
+      <span class="text-2xl font-normal">
+        Did you know that I used to be a teacher?  Two years ago I used to be a
+        teacher, I love to teach and learn, this life is an endless learn and
+        teach journey.
+      </span>
+      <span class="text-2xl font-normal"> Front-end developer</span>
+    </div>
+  </article>
+</section>

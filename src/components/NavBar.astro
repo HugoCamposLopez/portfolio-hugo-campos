@@ -1,13 +1,27 @@
 ---
-interface Props {
-	title: string;
-	body: string;
-	href: string;
-}
-
+import GithubIcon from "./icons/GithubIcon.astro";
+import LinkedInIcon from "./icons/LinkedInIcon.astro";
 ---
-<nav>
-	<span>
+<nav class="flex justify-between bg-black px-80">
+	<span  class="font-mont text-white">
 		Hugo Campos
 	</span>
+	<div  class="flex gap-10 text-white font-mont">
+		<a>
+			Main
+		</a>
+		<a>
+			About
+		</a>
+		<a>
+			Skills
+		</a>
+		<a>
+			Contact
+		</a>
+	</div>
+	<div class="flex gap-4">
+		<GithubIcon width={25} height={25}/>
+		<LinkedInIcon width={30} height={30} />
+	</div>
 </nav>

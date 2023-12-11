@@ -1,0 +1,15 @@
+---
+import linkedinIcon from "../../../public/Icons/linkedin-icon.png"
+import { Image } from 'astro:assets';
+
+interface Props {
+  width?: number,
+  height?: number
+}
+
+const {height, width} = Astro.props
+---
+<a target="_blank" href="https://www.linkedin.com/in/hugocamposlopez/">
+  <Image id={"linkeid-icon"} src={linkedinIcon} alt={"LinkedIn Icon"}  width={width} height={height}/>
+</a>
+
