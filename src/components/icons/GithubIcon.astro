@@ -1,5 +1,5 @@
 ---
-import GitHuSvg from "../../../public/Icons/github-mark-white.svg"
+import GitHuSvg from "../../../public/icons/github-mark-white.svg"
 import { Image } from 'astro:assets';
 
 interface Props {
@@ -9,7 +9,7 @@ interface Props {
 
 const {height, width} = Astro.props
 ---
-<a target="_blank" href="https://github.com/HugoCamposLopez">
+<a target="_blank" href="https://github.com/HugoCamposLopez" class="transition hover:scale-125">
   <Image id={"github-icon"} src={GitHuSvg} alt={"GithubIcon"}  width={width} height={height}/>
 </a>
 

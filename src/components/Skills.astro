@@ -1,0 +1,19 @@
+---
+import SkillCard from "./SkillCard.astro";
+
+---
+
+<section class="flex flex-col gap-[100px] pb-[100px]">
+  <h1 class="text-white font-mont text-center pt-[100px] text-40px font-bold">Skills</h1>
+  <div class="grid grid-cols-3 gap-y-[138px] place-items-center">
+    <SkillCard width={105} height={96}  altImage='React Icon' imageName='react-logo.svg' skillTitle='Reactjs & React Native'/>
+    <SkillCard width={105} height={96}  altImage='Jest Icon' imageName='jest-logo.svg' skillTitle='Jest'/>
+    <SkillCard width={105} height={96}  altImage='React Testing Library Icon' imageName='rtl-logo.png' skillTitle='React Testing Library'/>
+    <SkillCard width={105} height={96}  altImage='NextJs Icon' imageName='nextjs-logo.png' skillTitle='Next.js'/>
+    <SkillCard width={105} height={96}  altImage='Redux Icon' imageName='redux-logo.svg' skillTitle='Redux Zustand Mobx'/>
+    <SkillCard width={105} height={96}  altImage='Tailwind Icon' imageName='tailwind-logo.png' skillTitle='Tailwind & NativeWind'/>
+    <SkillCard width={105} height={96}  altImage='Typescript Icon' imageName='typescript-logo.png' skillTitle='TypeScript'/>
+    <SkillCard width={105} height={96}  altImage='Javascript Icon' imageName='javascript-logo.png' skillTitle='JavaScript'/>
+    <SkillCard width={105} height={96}  altImage='Git Icon' imageName='git-logo.png' skillTitle='Git'/>
+  </div>
+</section>

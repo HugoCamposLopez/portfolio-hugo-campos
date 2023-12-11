@@ -15,6 +15,9 @@ export default {
 			fontFamily:{
 				"mont": ["Montserrat"]
 			},
+			boxShadow:{
+				"white-sm": "-1px 1px 3px 0px #FFFFFF",
+			},
 		},
 	},
 	plugins: [],

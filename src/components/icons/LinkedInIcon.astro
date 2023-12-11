@@ -1,5 +1,5 @@
 ---
-import linkedinIcon from "../../../public/Icons/linkedin-icon.png"
+import linkedinIcon from "../../../public/icons/linkedin-icon.png"
 import { Image } from 'astro:assets';
 
 interface Props {
@@ -9,7 +9,7 @@ interface Props {
 
 const {height, width} = Astro.props
 ---
-<a target="_blank" href="https://www.linkedin.com/in/hugocamposlopez/">
+<a target="_blank" href="https://www.linkedin.com/in/hugocamposlopez/" class="transition hover:scale-125">
   <Image id={"linkeid-icon"} src={linkedinIcon} alt={"LinkedIn Icon"}  width={width} height={height}/>
 </a>
 
