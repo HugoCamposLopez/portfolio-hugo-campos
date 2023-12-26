@@ -5,15 +5,15 @@ interface Props {
   imageName: string
   skillTitle: string
   altImage: string
-  width: number
-  height: number
+  width?: number
+  height?: number
 }
 
 const {imageName, skillTitle, altImage, height, width} = Astro.props
 
 ---
 
-<section class="w-[305px] flex gap-5">
-<Image  width={width} height={height} alt={altImage ?? ""} src={import(`./assets/${imageName}`)}/>
-<span class="text-white flex-1 text-2xl font-mont items-center flex justify-center text-center">{skillTitle}</span>
+<section class="sm:w-[305px] flex sm:gap-5 sm:flex-row flex-col items-center gap-2 h-[180px] w-[180px] justify-between">
+<Image   width={width} height={height} alt={altImage ?? ""} src={import(`./assets/${imageName}`)}/>
+<span class="text-white max-h-[90px] flex-1 text-2xl h-fit font-mont items-center flex justify-center text-center">{skillTitle}</span>
 </section>

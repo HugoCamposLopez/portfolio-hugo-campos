@@ -1,11 +1,16 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "jsx": "react",
-    "baseUrl": ".",
+    "jsx": "react-jsx",
+    "baseUrl": "C:/Users/PC/Desktop/WorkSpace/portfolio-hugo-campos",
     "paths": {
-      "@components/*": ["src/components/*"],
-      "@icons/*": ["src/icons/*"]
-    }
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@icons/*": [
+        "src/icons/*"
+      ]
+    },
+    "jsxImportSource": "react"
   }
 }

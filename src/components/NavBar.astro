@@ -1,27 +1,109 @@
 ---
-import GithubIcon from "./icons/GithubIcon.astro";
-import LinkedInIcon from "./icons/LinkedInIcon.astro";
+import { GithubIcon } from './icons/GithubIcon.tsx'
+import { LinkedInIcon } from './icons/LinkedInIcon.tsx'
+
 ---
-<nav class="flex justify-between items-center bg-black px-[12px] top-0 fixed overflow-hidden w-full shadow-white-sm h-10">
-	<span  class="cursor-pointer font-mont text-white">
-		Hugo Campos
-	</span>
-	<div  class="flex gap-10 text-white font-mont">
-		<a class="w-10 cursor-pointer hover:scale-110 transition hover:translate-y-1 hover:font-bold">
-			Main
-		</a>
-		<a class="w-12 cursor-pointer hover:scale-110 transition hover:translate-y-1 hover:font-bold">
-			About
-		</a>
-		<a class="w-10 cursor-pointer hover:scale-110 transition hover:translate-y-1 hover:font-bold">
-			Skills
-		</a>
-		<a class="w-16 cursor-pointer hover:scale-110 transition hover:translate-y-1 hover:font-bold">
-			Contact
-		</a>
-	</div>
-	<div class="flex gap-4">
-		<GithubIcon width={25} height={25} />
-		<LinkedInIcon width={30} height={30} />
-	</div>
-</nav>
+    <nav
+      class="flex justify-between items-center bg-black px-[12px] top-0 fixed overflow-hidden w-full shadow-white-sm h-10">
+      <span class="cursor-pointer font-mont text-white hidden sm:block" > Hugo Campos</span>
+      <a class="cursor-pointer font-mont text-white sm:hidden" href="#Main"> H. Campos</a>
+
+      <div class="sm:flex gap-10 text-white font-mont hidden">
+        <a
+          href="#Main"
+          class="w-10 cursor-pointer hover:scale-110 transition hover:translate-y-1 hover:font-bold">
+          Main
+        </a>
+        <a
+          href="#About"
+          class="w-12 cursor-pointer hover:scale-110 transition hover:translate-y-1 hover:font-bold">
+          About
+        </a>
+        <a
+          href="#Skills"
+          class="w-10 cursor-pointer hover:scale-110 transition hover:translate-y-1 hover:font-bold">
+          Skills
+        </a>
+        <!-- <a
+        class="w-16 cursor-pointer hover:scale-110 transition hover:translate-y-1 hover:font-bold">
+          Projects
+        </a> -->
+      </div>
+    
+      <div class="sm:hidden flex gap-2 cursor-pointer ">
+        <ul class="menu text-white font-mont pt-10 flex gap-3 text-center" id="menu">
+          <li  class="hover:bg-tial"><a href="#Main">Home</a></li>
+          <li class="hover:bg-tial"><a href="#About">About</a></li>
+          <li class="hover:bg-tial"><a href="#Skills">Skills</a></li>
+          <!-- <li class="hover:bg-tial"><a href="#">Projects</a></li> -->
+          <a class="close font-mont text-lg font-bold" href="#">
+            <span class="material-icons ">
+              x
+            </span>
+          </a>
+        </ul>
+        <a class="hamburger rounded-md bg-tial shadow" href="#menu">
+          <span class="material-icons font-mont p-1 shadow-tial-sm rounded">
+            Main
+          </span>
+        </a>
+      </div>
+      <div>
+        <div class="flex gap-4">
+          <GithubIcon width={25} height={25} />
+          <LinkedInIcon width={30} height={30} />
+        </div>
+      </div>
+    </nav>
+
+    <style>
+  .hamburger {
+  position: fixed;
+  color: white;
+  /* a large z-index puts the ham button above the rest of the page*/
+  z-index: 99;
+  border: none;
+  cursor: pointer;
+  top: 5px;
+  left: 47%;
+}
+
+.menu {
+  position: fixed;
+  /* give the menu a larger z-index than the ham link
+  to put the menu above it */
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  /* basic menu styling*/
+  list-style: none;
+  background: black;
+  display: flex;
+
+  flex-direction: column;
+  /* animate slide up/down */
+  transform: translateY(-100%);
+  transition: transform 0.2s ease;
+}
+
+.close {
+  position: absolute;
+  border: none;
+  color: white;
+  cursor: pointer;
+  top: 1rem;
+  right: 1rem;
+}
+.menu:target {
+  /* show menu */
+  transform: translateY(0);
+}
+
+
+    </style>
+  
+
