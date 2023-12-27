@@ -1,0 +1,12 @@
+---
+import { Image } from "astro:assets";
+import AstroLogo from "./assets/astro.svg"
+---
+
+<footer class="bg-black flex justify-between px-2">
+  <p class="text-white font-mont md:text-base text-xs">Hugo Campos - Software developer</p>
+  <div class="flex gap-2">
+    <p class="text-white font-mont md:text-base text-xs">Created with Astro</p>
+    <Image src={AstroLogo} alt={"Astro logo"} width={20}/>
+  </div>
+</footer>
