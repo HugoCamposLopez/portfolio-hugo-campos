@@ -3,8 +3,8 @@ import Card from "./Card.astro";
 ---
 <section class="flex flex-col gap-[100px] pb-[100px] bg-grey" id="Projects">
     <h1 class="text-black font-mont text-center pt-[100px] text-40px font-bold">Projects</h1>
-    <div class="flex items-center justify-evenly">
-        <Card description="Clon de spotify creada con React Native." title="BrightMusic"/>
-        <Card description="PWA Minijuego creado con Reactjs" title="Reto o shot!"/>
+    <div class="flex items-center md:justify-evenly flex-col md:flex-row gap-8">
+        <Card description="Spotify's clone created with React Native" altImage="BrightMusic Logo"  imageName="bm_logo" href="https://github.com/HugoCamposLopez/BrightMusic" buttonTitle="Visit Github" title="BrightMusic"/>
+        <Card description="PWA Mini drinking game created with Reactjs" altImage="Dare or shot Logo" imageName="dare_logo" href="https://hugocamposlopez.github.io/dareOrShot/" buttonTitle="Play it!" title="Reto o shot!"/>
     </div>
 </section>
