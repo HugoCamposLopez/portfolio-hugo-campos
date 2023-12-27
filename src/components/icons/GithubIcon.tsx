@@ -1,4 +1,4 @@
-import GitHuSvg from "../../../public/icons/github-mark-white.svg"
+import GitHuSvg from "../assets/github-mark-white.svg"
 
 interface Props {
   width?: number,

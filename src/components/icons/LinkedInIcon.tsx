@@ -1,4 +1,4 @@
-import linkedinIcon from "../../../public/icons/linkedin-icon.png"
+import linkedinIcon from "../assets/linkedin-icon.png"
 
 interface Props {
   width?: number,
