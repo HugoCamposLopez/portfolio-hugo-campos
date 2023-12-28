@@ -14,9 +14,9 @@ const {description, title, buttonTitle, href, altImage, imageName} = Astro.props
 
 <div class="w-[360px] bg-black border rounded-lg shadow-tial-sm flex flex-col h-[360px] justify-between">
     <a href={href} target="_blank" class="flex items-center justify-center mt-2">
-        <Image class="rounded-lg"  height={150} alt={altImage} src={import(`./assets/${imageName}.png`)} />
+        <Image class="rounded-lg bg-tial"  height={150} alt={altImage} src={import(`./assets/${imageName}.png`)} />
     </a>
-    <div class="p-5">
+    <div class="px-5 pb-5">
         <span >
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-white font-mont">{title}</h5>
         </span>
